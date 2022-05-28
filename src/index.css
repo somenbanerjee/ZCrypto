@@ -1,13 +1,51 @@
 body {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.10);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.10);
+}
+.search-input{
+  border-radius: 50px;
+}
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+
+}
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4;
+}
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid blue;
+}
+.card-container:hover {
+  opacity: 0.8;
+}
+.card-container a {
+  text-decoration: none;
+  color: #333;
+}
+.card-container a:hover,
+.card-container a:active {
+  text-decoration: none;
+  color: #333;
+}
+.card-body{
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.footer {
+  background-color: #333
+}
+.footer a {
+    text-decoration: none;
+    color: #FFF;
 }
