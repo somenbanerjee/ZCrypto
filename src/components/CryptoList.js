@@ -6,7 +6,7 @@ export const CryptoList = () => {
     const [cryptos, setCryptos] = useState([]);
     const [search, setSearch] = useState("");
     useEffect(() =>{
-        axios.get("https://api.coinstats.app/public/v1/coins?skip=0&limit=100¤cy=INR")
+        axios.get("https://api.coinstats.app/public/v1/coins?skip=0&limit=100cy=USD")
         .then(response => {
             setCryptos(response.data.coins);
         })
@@ -54,8 +54,8 @@ export const CryptoList = () => {
                                             <td>
                                                 <img src={ crypto.icon } width={26} alt={ crypto.name } /> { crypto.name }
                                             </td>
-                                            <td>₹ { crypto.price.toFixed(2) }</td>
-                                            <td>₹ { crypto.volume }</td>
+                                            <td>$ { crypto.price.toFixed(2) }</td>
+                                            <td>$ { crypto.volume }</td>
                                             <td className={ crypto.priceChange1d > 0 ? 'text-success' : 'text-danger' }>₹ { crypto.priceChange1d }</td>
                                         </tr>
                                     )
